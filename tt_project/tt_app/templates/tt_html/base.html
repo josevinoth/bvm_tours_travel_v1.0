@@ -54,15 +54,28 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="#"> Home</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Company </a>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_company" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Company
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'about_us' %}" >About us</a>
+                            <a class="dropdown-item" href="{% url 'history' %}">History</a>
+                            <a class="dropdown-item" href="{% url  'awards_achievements' %}">Award & Achievements</a>
+                            <a class="dropdown-item" href="#">Media</a>
+                            <a class="dropdown-item" href="#">Testimonials</a>
+                            <a class="dropdown-item" href="{% url 'careers' %}">Careers</a>
+                            <a class="dropdown-item" href="{% url 'blog' %}">Blog</a>
+
+                        </div>
+
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">Group Tours </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_packages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Packagaes
+                            Packages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
