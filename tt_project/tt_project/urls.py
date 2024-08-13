@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
+
 urlpatterns = [
     path('tt_project/admin/', admin.site.urls),
     path('tt_project/',include('tt_app.urls')),

@@ -1,0 +1,44 @@
+{% extends "tt_html/base.html" %}
+{% load widget_tweaks %}
+{% block content %}
+
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <!-- Certificates Section -->
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h1 style="font-size: 36px; margin-bottom: 30px;color:black"><b>Our Certificates</b></h1>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <img src="/media/Awards_achievements/award1.jpg" alt="Certificate 1" style="width: 300px; height: auto;">
+            <img src="/media/Awards_achievements/award2.jpg" alt="Certificate 2" style="width: 300px; height: auto;">
+            <img src="/media/Awards_achievements/award3.jpg" alt="Certificate 3" style="width: 300px; height: auto;">
+            <img src="/media/Awards_achievements/award4.jpg" alt="Certificate 4" style="width: 300px; height: auto;">
+            <img src="/media/Awards_achievements/award5.jpg" alt="Certificate 5" style="width: 300px; height: auto;">
+            <img src="/media/Awards_achievements/award6.jpg" alt="Certificate 6" style="width: 300px; height: auto;">
+        </div>
+    </div>
+
+    <!-- Subscription Section -->
+    <div style="background-color: #F7F7F7; padding: 30px; text-align: center;">
+        <div style="display: inline-block; text-align: left; max-width: 800px; width: 100%;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center;">
+                    <img src="/media/Awards_achievements/bell1.png" alt="Bell Icon" style="width: 50px; height: auto; margin-right: 20px;">
+                    <div>
+                        <h2 style="font-size: 24px; margin: 0;">Get Updates & More</h2>
+                        <p style="color: #777; font-size: 16px; margin: 5px 0 0;">Thoughtful thoughts to your inbox</p>
+                    </div>
+                </div>
+                <div style="flex-grow: 1; text-align: right;">
+                    <form action="#" method="POST" style="display: flex; align-items: center; max-width: 400px; margin-left: auto;">
+                        <input type="email" placeholder="Your Email" required style="padding: 10px; font-size: 16px; width: 70%; border: 1px solid #ccc; border-right: none; border-radius: 5px 0 0 5px;">
+                        <button type="submit" style="padding: 10px 20px; background-color: #000; color: #fff; font-size: 16px; border: none; border-radius: 0 5px 5px 0; cursor: pointer;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+{% endblock content %}
