@@ -8,3 +8,4 @@ from.sub_views.history import history
 from.sub_views.careers import careers
 from.sub_views.blog import blog
 from.sub_views.awards_achievements import awards_achievements
+from.sub_views.group_tours import group_tours
