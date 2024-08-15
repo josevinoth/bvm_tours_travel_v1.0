@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
-/*font-family: 'Yaldevi', sans-serif;*/
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
 
 .card_animation {
@@ -9,6 +16,11 @@
     transition: transform 0.3s;
 }
 
+.logo {
+    width: auto; /* Adjust size as needed */
+    height: auto;
+    background: transparent; /* Ensures the image background is transparent */
+}
 
 
 
