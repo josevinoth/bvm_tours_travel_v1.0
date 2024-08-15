@@ -22,5 +22,10 @@ body {
     background: transparent; /* Ensures the image background is transparent */
 }
 
+.nav_bg{
+background-color:#BF0005;
+font-color:white;
+}
+
 
 
