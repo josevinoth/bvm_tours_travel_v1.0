@@ -26,14 +26,14 @@
 
 </head>
 <body style=" ">
-<div class="header_style mb-2 text-white">
+<div class="bg-warning text-dark">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="title_style col-3" >
-                <h1 style="font-weight:Bold;"><a href="{% url 'home_page' %}" class="btn btn-dark"><i class="fas fa-home"></i></a></h1>
+                <h1 style="font-weight:Bold;"></h1>
             </div>
             <div class="col-6" >
-                <h1 style="font-weight: Bold;"><img src="/media/Company_Logo.png" style="width:50px;height:60px;padding:2px;margin-right:10px;">BVM Tours & Travels</h1>
+                <h1 style="font-weight: Bold;"><img src="/media/MC_Tours_travels_1.jpg" style="width:100px;height:100px;padding:2px;margin-right:10px;">MC Tours & Travels</h1>
             </div>
             <div class="col-2" >
                 <h6>Hi, </h6>
@@ -44,15 +44,15 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg ">
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#"> Home</a>
+                        <a class="nav-link" href="{% url 'home_page' %}"><i class="fas fa-home"></i> Home</a>
                     </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_company" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
