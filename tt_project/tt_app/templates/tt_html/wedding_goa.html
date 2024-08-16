@@ -2,6 +2,29 @@
 {% load widget_tweaks %}
 {% block content %}
 <style>
+      .sidebar {
+            width: 20%;
+            float: left;
+            background-color: #f7f7f7;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #ddd;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .sidebar a.active {
+            background-color: #FFD700;
+            color: #fff;
+        }
     h1{
      color:blue;
     }
@@ -14,6 +37,16 @@
 	<div class="col-10">
 		<div class="container-fluid">
 			<img src="/media/goa1_card.png" width="1200" height="200"/>
+            <div class="sidebar">
+        <a href="#">Agra</a>
+        <a href="#">Andaman</a>
+        <a href="#">Goa</a>
+        <a href="#" class="active">Jaipur</a>
+        <a href="#">Jaisalmer</a>
+        <a href="#">Jodhpur</a>
+        <a href="#">Kerala</a>
+
+    </div>
             <h1>Begin Your Lifelong Journey with Our Agra Destination Wedding Packages</h1>
              <p>Home to ‘A Symbol of Love- Taj Mahal, Agra is considered to be one of the most romantic cities in the country, and rightly so. A place which in all its essence is what it is because of the passionate love of a King towards his deceased wife has now been a source of inspiration for lovers all around the globe. It only makes sense that the city enjoys couples wanting to get married in the place where true love was once witnessed. With we thoughtfully designed<b>Agra Destination Wedding </b>Packages, you can leave it all on us to make your wedding the most special.</p>
              <h1>What are some of the tips for Destination Wedding in Agra?</h1>
