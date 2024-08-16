@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from.sub_views.wedding_goa_view import wedding_goa_view
-from.sub_views.wedding_india_view import wedding_india_view
 from .sub_views.cruise_view import cruise_view
-from.sub_views.home_page_view import home_page_view
+from .sub_views.home_page_view import home_page_view
+from .sub_views.wedding_goa_view import wedding_goa_view
+from .sub_views.wedding_india_view import wedding_india_view
