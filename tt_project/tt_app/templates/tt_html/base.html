@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web Application</title>
+    <title>MC Tours & Traverls</title>
     <!-- Fontawesome cdn -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -25,15 +25,15 @@
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
 
 </head>
-<body style="background-color: #99ccff ">
-<div class="header_style mb-2 text-white">
+<body style=" ">
+<div class="bg-light ">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="title_style col-3" >
-                <h1 style="font-weight:Bold;"><a href="{% url 'home_page' %}" class="btn btn-dark"><i class="fas fa-home"></i></a></h1>
+                <h1 style="font-weight:Bold;"></h1>
             </div>
             <div class="col-6" >
-                <h1 style="font-weight: Bold;"><img src="/media/Company_Logo.png" style="width:50px;height:60px;padding:2px;margin-right:10px;">BVM Tours & Travels</h1>
+                <h1 class="logo"><img src="/media/MC_Tours_travels_1.jpg" style="width:100px;height:100px;padding:2px;margin-right:10px;">MC Tours & Travels</h1>
             </div>
             <div class="col-2" >
                 <h6>Hi, </h6>
@@ -44,25 +44,38 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg ">
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light nav_bg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#"> Home</a>
+                        <a class="nav-link" href="{% url 'home_page' %}"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_company" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Company
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'about_us' %}" >About us</a>
+                            <a class="dropdown-item" href="{% url 'history' %}">History</a>
+                            <a class="dropdown-item" href="{% url  'awards_achievements' %}">Award & Achievements</a>
+                            <a class="dropdown-item" href="#">Media</a>
+                            <a class="dropdown-item" href="#">Testimonials</a>
+                            <a class="dropdown-item" href="{% url 'careers' %}">Careers</a>
+                            <a class="dropdown-item" href="{% url 'blog' %}">Blog</a>
+
+                        </div>
+
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Company </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Group Tours </a>
+                        <a class="nav-link" href="group_tours">Group Tours </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_packages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Packagaes
+                            Packages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -137,6 +150,15 @@
 <!--Date format-->
 <script src="https://cdn.datatables.net/plug-ins/1.13.6/dataRender/datetime.js"></script>
 
+<style>
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
 
+    .dropdown-item:hover {
+        background-color: blue;
+        color: white; /* Optional: to ensure text remains readable */
+    }
+</style>
 </body>
 </html>
