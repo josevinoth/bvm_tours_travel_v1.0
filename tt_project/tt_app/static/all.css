@@ -8,7 +8,6 @@ body {
     padding: 0;
 }
 
-
 .card_animation {
     width: 100%;
     height: 320px;
@@ -27,5 +26,86 @@ background-color:#BF0005;
 font-color:white;
 }
 
+/* Common Styles */
+.banner-section {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.banner-section img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 22%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content p {
+    color: #777;
+    font-size: 12px;
+    margin: 0;
+}
+
+.card-content h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card-content .days {
+    color: #f57c00;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image hover effect: slightly scale up */
+.card img:hover {
+    transform: scale(1.1);
+}
+
+/* Title hover effect: change color */
+.card h3:hover {
+    color: #f57c00;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
 
 
