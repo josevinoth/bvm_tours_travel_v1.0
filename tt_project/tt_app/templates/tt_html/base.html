@@ -81,8 +81,8 @@
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <div class="dropdown-divider">Honeymoon</div>
-                            <a class="dropdown-item" href="#">India</a>
-                            <a class="dropdown-item" href="#">International</a>
+                            <a class="dropdown-item" href="{% url 'packages_india' %}">India</a>
+                            <a class="dropdown-item" href="{% url 'packages_international'%}">International</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -98,11 +98,11 @@
                         <a class="nav-link" href="cruise">Cruise </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_wedding" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown_wedding" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Wedding
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">India</a>
+                            <a class="dropdown-item" href="{% url 'wedding_india' %}">India</a>
                             <a class="dropdown-item" href="#">International</a>
                         </div>
                     </li>
@@ -122,9 +122,7 @@
     </div>
 </div>
 
-<br>
-<!--Content-->
-<div class="container-fluid pt-2 pb-5">
+
     {% block content %}
 
     {% endblock content %}
