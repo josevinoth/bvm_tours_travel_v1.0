@@ -9,4 +9,8 @@ urlpatterns = [
     path('blog', views.blog, name='blog'),
     path('awards_achievements', views.awards_achievements, name='awards_achievements'),
     path('group_tours', views.group_tours, name='group_tours'),
+    path('packages_india', views.packages_india_view , name='packages_india'),
+    path('packages_international', views.packages_international_view, name='packages_international'),
 ]
+
+
