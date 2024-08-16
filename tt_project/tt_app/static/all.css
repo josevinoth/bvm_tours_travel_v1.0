@@ -109,4 +109,13 @@ font-color:white;
         display: block;
     }
 
+/* Location icon size */
+.location_icon_size {
+   font-size: 16px;
+}
+
+/* call & emial */
+.call_email_icon_size {
+   font-size: 24px;
+}
 
