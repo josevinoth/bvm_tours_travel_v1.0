@@ -3,6 +3,7 @@ from . import views
 urlpatterns = [
     path('wedding_india', views.wedding_india_view, name='wedding_india'),
     path('wedding_goa', views.wedding_goa_view, name='wedding_goa'),
+    path('wedding_jaipur', views.wedding_jaipur_view, name='wedding_jaipur'),
     path('cruise', views.cruise_view, name='cruise'),  # access cruise
     path('home_page', views.home_page_view, name='home_page'),  # access cruise
     path('about_us', views.about_us, name='about_us'),

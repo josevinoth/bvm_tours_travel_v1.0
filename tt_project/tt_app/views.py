@@ -12,3 +12,4 @@ from.sub_views.group_tours import group_tours
 from .sub_views.home_page_view import home_page_view
 from .sub_views.wedding_goa_view import wedding_goa_view
 from .sub_views.wedding_india_view import wedding_india_view
+from .sub_views.wedding_jaipur_view import wedding_jaipur_view
