@@ -27,27 +27,21 @@
             background-color: #FFD700;
             color: #fff;
         }
-       h1{
-     color:blue;
-    }
-    p{
-    color:black;
-    }
 </style>
-<div class="row">
+<div class="container-fluid">
 	<div class="col-1"></div>
 	<div class="col-10">
 		<div class="container-fluid">
 			<div class="container-fluid">
-                <img src="/media/jaipur1_card.png" width="1400" height="200"/>
+                <img src="/media/wedding/jaipur1_card.png" width="1400" height="200"/>
                   <div class="sidebar">
-        <a href="#">Agra</a>
+        <a href="{% url 'wedding_agra' %}">Agra</a>
         <a href="#" class="active">Andaman</a>
-        <a href="#">Goa</a>
-        <a href="#">Jaipur</a>
-        <a href="#">Jaisalmer</a>
+        <a href="{% url 'wedding_goa' %}">Goa</a>
+        <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
+        <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
         <a href="#">Jodhpur</a>
-        <a href="#">Kerala</a>
+        <a href="{% url 'wedding_kerala' %}">Kerala</a>
 
     </div>
                  <h1>Choose Jaipur destination wedding packages for regal weddings</h1>

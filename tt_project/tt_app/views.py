@@ -15,4 +15,7 @@ from.sub_views.home_page_view import home_page_view
 from.sub_views.wedding_goa_view import wedding_goa_view
 from.sub_views.wedding_india_view import wedding_india_view
 from.sub_views.wedding_jaipur_view import wedding_jaipur_view
+from.sub_views.wedding_agra_view import wedding_agra_view
+from.sub_views.wedding_kerala_view import wedding_kerala_view
+from.sub_views.wedding_jaisalmer_view import wedding_jaisalmer_view
 from.sub_views.wedding_international_view import wedding_international_view

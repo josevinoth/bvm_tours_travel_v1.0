@@ -2,7 +2,7 @@
 {% load widget_tweaks %}
 {% block content %}
 <style>
-      .sidebar {
+    .sidebar {
             width: 20%;
             float: left;
             background-color: #f7f7f7;
@@ -21,30 +21,27 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
+
+
         .sidebar a.active {
             background-color: #FFD700;
             color: #fff;
         }
-    h1{
-     color:blue;
-    }
-    p{
-    color:black;
-    }
 </style>
-<div class="row">
+<div class="container-fluid">
 	<div class="col-1"></div>
 	<div class="col-10">
 		<div class="container-fluid">
-			<img src="/media/goa1_card.png" width="1200" height="200"/>
+            <div class="container-fluid">
+			<img src="/media/wedding/goa1_card.png" width="1400" height="200"/>
             <div class="sidebar">
-        <a href="#">Agra</a>
+        <a href="{% url 'wedding_agra' %}">Agra</a>
         <a href="#">Andaman</a>
-        <a href="#">Goa</a>
-        <a href="#">Jaipur</a>
-        <a href="#">Jaisalmer</a>
+        <a href="{% url 'wedding_goa' %}">Goa</a>
+        <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
+        <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
         <a href="#">Jodhpur</a>
-        <a href="#">Kerala</a>
+        <a href="{% url 'wedding_kerala' %}">Kerala</a>
 
     </div>
             <h1>Begin Your Lifelong Journey with Our Agra Destination Wedding Packages</h1>
@@ -116,6 +113,7 @@
                       </div>
                   </div>
               </div>
+                </div>
         </div>
 	</div>
 	<div class="col-1"></div>
