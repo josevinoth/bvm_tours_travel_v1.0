@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 urlpatterns = [
     path('wedding_india', views.wedding_india_view, name='wedding_india'),
+    path('wedding_international', views.wedding_international_view, name='wedding_international'),
     path('wedding_goa', views.wedding_goa_view, name='wedding_goa'),
     path('wedding_jaipur', views.wedding_jaipur_view, name='wedding_jaipur'),
     path('cruise', views.cruise_view, name='cruise'),  # access cruise
