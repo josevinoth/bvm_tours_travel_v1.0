@@ -25,23 +25,38 @@
             background-color: #FFD700;
             color: #fff;
         }
+     h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
 </style>
 <div class="container-fluid">
-	<div class="col-1"></div>
-	<div class="col-10">
-		<div class="container-fluid">
-            <div class="container-fluid" >
-				<img src="/media/wedding/jaisalmer1_card.png" width="1400" height="200"/>
-                  <div class="sidebar">
-        <a href="{% url 'wedding_agra' %}">Agra</a>
-        <a href="#">Andaman</a>
-        <a href="{% url 'wedding_goa' %}">Goa</a>
-        <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
-        <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
-        <a href="#">Jodhpur</a>
-        <a href="{% url 'wedding_kerala' %}">Kerala</a>
-
+    <div class="row">
+        <img src="/media/wedding/jaisalmer1_card.png" width="1400" height="200"/>
     </div>
+	<div class="row">
+        <div class="col">
+            <div class="row container-fluid" >
+                <div class="col-2 sidebar shadow">
+                    <a href="{% url 'wedding_agra' %}">Agra</a>
+                    <a href="#">Andaman</a>
+                    <a href="{% url 'wedding_goa' %}">Goa</a>
+                    <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
+                    <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
+                    <a href="#">Jodhpur</a>
+                    <a href="{% url 'wedding_kerala' %}">Kerala</a>
+                </div>
+                 <div class="col-10 p-5" style="text-align: justify;">
               <h1>The Perfect Beginning to Forever- Jaisalmer Destination Wedding Packages</h1>
                 <p>An ‘Oasis’ in the desert and also known as the ‘Golden City of India’, Jaisalmer is famous for its stunning sand dunes, sheer beauty, magnificent Havelis, historic temples and colourful market places. It’s also quite prominent for hosting couples worldwide and turning their dreams into reality! How you may ask? Jaisalmer has some of the best wedding venues in the country built with a traditional palatial look to make you feel nothing less than a royal. It welcomes couples from all around the world looking to get hitched, and if you’re one of those couples then our Jaisalmer Destination Wedding Package is all you need to bring your dream wedding to life.</p>
                <h1> What are some of the tips for Destination Wedding in Jaisalmer?</h1>
@@ -69,80 +84,98 @@
                           </ul>
                           <p>Jaisalmer is one such exotic location that can triple up as a holiday, wedding and honeymoon destination. If you want this beautiful part of history to be a part of your history, then our Jaisalmer Destination Wedding Package is all you need to make it happen. So, come, let us make your memorable day more memorable!</p>
                             <h1>FAQs</h1>
-                             <div class="accordion" id="accordionExample">
-               <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      When is the Best Time to get married in Jaisalmer?
-                      </button>
-                            </h2>
-                     </div>
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                              The best time to get married in Jaisalmer is between the months of November and March because the weather is cold enough to enhance the overall experience.
-                          </div>
-                          </div>
+                              <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  <i class="fa-solid fa-clipboard-question" style="padding-right:10px;"></i>When is the Best Time to get married in Jaisalmer?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The best time to get married in Jaisalmer is between the months of November and March because the weather is cold enough to enhance the overall experience.
                          </div>
-                         <div class="card">
-                            <div class="card-header" id="headingTwo">
-                               <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                 How much does a Destination Wedding in Jaisalmer cost?
-                                </button>
-                              </h2>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                               <i class="fa-thin fa-message-question" style="padding-right:10px;"></i>
+                                How much does a Destination Wedding in Jaisalmer cost?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Jaisalmer being a very popular tourist destination and home to some of the world’s best spots, a fancy destination wedding in Jaisalmer could cost anywhere between INR 25,00,000 to INR 1,00,00,000 and more. Though if you’re going for a wedding on budget, it’ll cost you roughly around INR 25,00,000 to INR 30,00,000.
+                        </div>
+                    </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                               How do I plan a Destination Wedding in Jaisalmer?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Planning a destination wedding is a task, especially if it’s not the city you’re familiar with. So why not leave it all on us while you busy yourself in enjoying the most beautiful moment of your life.
                          </div>
-                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                              Jaisalmer being a very popular tourist destination and home to some of the world’s best spots, a fancy destination wedding in Jaisalmer could cost anywhere between INR 25,00,000 to INR 1,00,00,000 and more. Though if you’re going for a wedding on budget, it’ll cost you roughly around INR 25,00,000 to INR 30,00,000.
-                          </div>
-                          </div>
-                         </div>
-                      <div class="card"><div class="card-header" id="headingThree">
-                       <h2 class="mb-0">
-                           <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                           How do I plan a Destination Wedding in Jaisalmer?
-                           </button>
-                            </h2>
+                        </div>
+                    </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                               How much is an all-inclusive Destination Wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                An all-inclusive destination wedding depends on the number of guests, the wedding venue, the cost of hosting the guests and other wedding titbits. But on an average, it can cost anywhere between INR 20,00,000 to INR 1,00,00,000 and more.
+                       </div>
                             </div>
-                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                     <div class="card-body">
-                         Planning a destination wedding is a task, especially if it’s not the city you’re familiar with. So why not leave it all on us while you busy yourself in enjoying the most beautiful moment of your life.
-                     </div>
-                      </div>
-                  </div>
-                                  <div class="card">
-                  <div class="card-header" id="headingOne1">
-                    <h2 class="mb-0">
-                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                      How much is an all-inclusive Destination Wedding?
-                      </button>
-                            </h2>
-                     </div>
-                      <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordionExample">
-                          <div class="card-body">
-                              An all-inclusive destination wedding depends on the number of guests, the wedding venue, the cost of hosting the guests and other wedding titbits. But on an average, it can cost anywhere between INR 20,00,000 to INR 1,00,00,000 and more.
-                         </div>
-                          </div>
-                         </div>
-                                   <div class="card">
-                  <div class="card-header" id="headingOne2">
-                    <h2 class="mb-0">
-                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                      How do I Book a Venue or Resort for Destination Wedding?
-                      </button>
-                            </h2>
-                     </div>
-                      <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordionExample">
-                          <div class="card-body">
-                              To book a venue or resort, all you have to do is either visit their official website or call them up directly requesting for a slot. Though, in today’s times booking a slot from website is much preferred.
-                         </div>
-                          </div>
-                         </div>
-              </div>
-            </div>
-		</div>
-	</div>
-	<div class="col-1"></div>
+                        </div>
+
+
+                          <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+                               Do you pay for guests at Destination Wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Though it is understood that at destination weddings you have to also bear the cost of your guests, but if for some reason you are unable to or don’t want to, that’s totally acceptable.
+                            </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                               How do I Book a Venue or Resort for Destination Wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                To book a venue or resort, all you have to do is either visit their official website or call them up directly requesting for a slot. Though, in today’s times booking a slot from website is much preferred.
+                        </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree4" aria-expanded="false" aria-controls="flush-collapseThree4">
+                              Do you organize only Weddings or other Events as well?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                We organize Weddings and Honeymoons, and other events depending on the needs and circumstances.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+           </div>
+    </div>
+ </div>
+</div>
 </div>
 {% endblock content %}

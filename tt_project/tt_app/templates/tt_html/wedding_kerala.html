@@ -25,15 +25,31 @@
             background-color: #FFD700;
             color: #fff;
         }
+     h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+
+}
 
 </style>
 <div class="container-fluid">
-    <div class="col-1"></div>
-    <div class="col-11">
-        <div class="container-fluid">
-            <div class="container-fluid" >
-                <img src="/media/wedding/kerala1_card.png" width="1400" height="200"/>
-                <div class="sidebar">
+    <div class="row">
+        <img src="/media/wedding/kerala1_card.png" width="1400" height="200"/>
+    </div>
+	<div class="row">
+        <div class="col">
+            <div class="row container-fluid" >
+                <div class="col-2 sidebar shadow">
                     <a href="{% url 'wedding_agra' %}">Agra</a>
                     <a href="#">Andaman</a>
                     <a href="{% url 'wedding_goa' %}">Goa</a>
@@ -42,6 +58,7 @@
                     <a href="#">Jodhpur</a>
                     <a href="{% url 'wedding_kerala' %}">Kerala</a>
                 </div>
+                 <div class="col-10 p-5" style="text-align: justify;">
                 <h1>Kerala Destination Wedding Packages: A Perfect Beginning</h1>
                 <p>A wedding is the most blissful affair of one’s life that everyone wishes to treasure. So, it’s only right that the most important event of your life deserves only the best, and nothing is better than being surrounded by people who love you and care about you, and are genuinely happy for you. So, why not whisk yourself away to this alternate reality with our Kerala Destination Wedding Packages that are surely going to hit all the right spots in your list.</p>
 
@@ -80,37 +97,94 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Accordion Item #1
+                                  <i class="fa-solid fa-clipboard-question" style="padding-right:10px;"></i>How much does a destination wedding in Kerala cost?
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            <div class="accordion-body">
+                                The cost for a destination wedding in Kerala totally depends on the venue, number of guests, and how lavish you want the wedding to be. But the average cost starts from INR 2,50,000 and can go anywhere up to INR 20,00,000 and more.
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Accordion Item #2
+                               <i class="fa-thin fa-message-question" style="padding-right:10px;"></i>
+                                When is the Best Time to get married in Kerala?
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                            <div class="accordion-body">
+                                Kerala is one such beautiful state that enjoys pleasant weather throughout the year making it the perfect destination for weddings. But, the most ideal time to get married in Kerala is between the months of October and March when the weather is pleasant enough for both outdoor and indoor weddings.
                         </div>
                     </div>
-                    <div class="accordion-item">
+                        <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Accordion Item #3
+                               How do I plan a Destination Wedding in Kerala?
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                            <div class="accordion-body">
+                                The foremost thing is to decide the time of the year you plan to get married which could be anytime as Kerala has pleasant weather. Then, you can either hire a wedding planner to take care of all your needs and demands or you can choose to do it in your own way and style
+                         </div>
+                        </div>
+                    </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                               How much is an all-inclusive destination wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                An all-inclusive destination wedding cost really differs from client to client as the time of the year and the choices made by the client factor in while deciding the cost, but on average about INR 2,50,000 to INR 20,00,000 and more, it could take.
+                        </div>
+                            </div>
+                        </div>
+
+
+                          <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+                               Do you pay for guests at destination wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                That totally depends on you whether you want to pay for your guests or not. Mostly, if it’s a destination wedding, hosts do take care of all the costs for their guests but that doesn’t necessarily mean that they have to.
+                         </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                               How do I Book a Venue or Resort for Destination Wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                To book a Venue or Resort for Destination Weddings, you’d need to call the said venue or resort and ask for the availability of the place on the day you plan to get married and also about other services. You can book the venue once everything is confirmed. But if you want to take an easy way out then you can always hire someone to do it for you.
+                        </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree4" aria-expanded="false" aria-controls="flush-collapseThree4">
+                              Do you organize only Weddings or other Events as well?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                We organize Weddings and Honeymoons, and other events depending on the needs and circumstances.
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+               </div>
+           </div>
     </div>
-    <div class="col-1"></div>
+ </div>
+</div>
 </div>
 {% endblock content %}

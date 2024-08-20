@@ -26,14 +26,29 @@
             background-color: #FFD700;
             color: #fff;
         }
+     h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
 </style>
 <div class="container-fluid">
-    <div class="col-1"></div>
-    <div class="col-10">
-        <div class="container-fluid">
-            <div class="container-fluid">
-                <img src="/media/wedding/goa1_card.png" width="1400" height="200"/>
-                <div class="sidebar">
+    <div class="row">
+        <img src="/media/wedding/goa1_card.png" width="1400" height="200"/>
+    </div>
+	<div class="row">
+        <div class="col">
+            <div class="row container-fluid" >
+                <div class="col-2 sidebar shadow">
                     <a href="{% url 'wedding_agra' %}">Agra</a>
                     <a href="#">Andaman</a>
                     <a href="{% url 'wedding_goa' %}">Goa</a>
@@ -42,6 +57,7 @@
                     <a href="#">Jodhpur</a>
                     <a href="{% url 'wedding_kerala' %}">Kerala</a>
                 </div>
+                 <div class="col-10 p-5" style="text-align: justify;">
                 <h1>Begin Your Lifelong Journey with Our Agra Destination Wedding Packages</h1>
                 <p>Home to ‘A Symbol of Love- Taj Mahal, Agra is considered to be one of the most romantic cities in the country, and rightly so. A place which in all its essence is what it is because of the passionate love of a King towards his deceased wife has now been a source of inspiration for lovers all around the globe. It only makes sense that the city enjoys couples wanting to get married in the place where true love was once witnessed. With we thoughtfully designed<b>Agra Destination Wedding </b>Packages, you can leave it all on us to make your wedding the most special.</p>
                 <h1>What are some of the tips for Destination Wedding in Agra?</h1>
@@ -68,52 +84,99 @@
                 </ul>
                 <p>A beautiful city true to its history, Agra is really a wonder of India that welcomes tourists from all around the world throughout the year. Getting married in a place having such historical importance is something that many couples dream of. So, if you want to make it a part of your history, our Agra Destination Wedding Packages can promise to give you your dream wedding.</p>
                 <h1  class="fs-1">FAQs</h1>
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How much does a destination wedding in Agra cost?
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                The romantic enticement of the Taj Mahal makes Agra one of the most loved wedding destinations. Depending on the type of hotel and the budget you are going for, it can cost you roughly from INR 25,00,000 to INR 75,00,000.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    When is the Best Time to get married in Agra?
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                Agra enjoys a semi-arid climate. Mid-October to April is favorable to get married to November- February having the best weather for couples looking to get hitched.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card"><div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                How do I plan a Destination Wedding in Agra?
+                 <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  <i class="fa-solid fa-clipboard-question" style="padding-right:10px;"></i>How much does a destination wedding in Goa cost?
                             </button>
                         </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The cost of your destination wedding in Goa will depend on the kind of package you choose. We tailor your wedding package based on your preferences and decisions, such as the type of food, the type of venue, whether you want to include other functions in the package, and so on.
+                         </div>
                     </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                                Destination weddings aren’t easy to plan. Planning a destination wedding includes a lot of logistics, communication, co-ordination in the chaos of the whole wedding itself. And so, we would say having us on your side will not only ease the whole process but will help you to focus and enjoy your functions.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                               <i class="fa-thin fa-message-question" style="padding-right:10px;"></i>
+                                When is the Best Time to get married in Goa?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The period between November and March is the perfect time to have a destination wedding in Goa. The weather during this time is balmy and clear with a wonderful, cool sea breeze blowing through, making it a great location for a destination wedding.
+                        </div>
+                    </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                               How do I plan a Destination Wedding in Goa?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                GT Holidays provides you with a bunch of destination wedding locations in Goa for you to choose from. However, before you plan a destination wedding in Goa, there’s a checklist you should make so that you remember to get everything done, such as visiting the location beforehand, meeting the vendors in advance, matching your outfits to the weather, and so on.
+
+                          </div>
+                        </div>
+                    </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                               How much is an all-inclusive destination wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The cost of an all-inclusive destination wedding would depend on the kind of package you choose. We have different levels of all-inclusive wedding packages, the prices of which vary depending on the features you choose. Such a package would include not only the location, food, decoration, and music, but also the other events leading up to the wedding.
+                         </div>
+                            </div>
+                        </div>
+
+
+                          <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+                               Do you pay for guests at destination wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Whether you pay for your guests at your destination wedding or not depends on you. While it’s not necessary for you to pay for their lodging, some choose to do so.
+                         </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                               How do I Book a Venue or Resort for Destination Wedding?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                We have a list of the best destination wedding venues in Goa for you to select from. GT Holidays takes care of all your bookings for you. Whether you want to book a resort or any other venue for your wedding, we arrange it all depending on your preference.
+                        </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree4" aria-expanded="false" aria-controls="flush-collapseThree4">
+                              Do you organize only Weddings or other Events as well?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                We don’t organize weddings, but other events leading up to the wedding as well. These events include the sangeet ceremony, haldi, engagement, mehendi, and so on.
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+               </div>
+           </div>
     </div>
-    <div class="col-1"></div>
+ </div>
+</div>
 </div>
 {% endblock content %}
