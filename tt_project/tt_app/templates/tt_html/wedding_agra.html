@@ -2,11 +2,13 @@
 {% load widget_tweaks %}
 {% block content %}
 <style>
+
     .sidebar {
+            font-size: 1.25em;
             width: 20%;
             float: left;
             background-color: #f7f7f7;
-            padding: 20px;
+            padding: 5px;
             box-sizing: border-box;
             border-right: 1px solid #ddd;
             height: 60vh;
@@ -25,21 +27,27 @@
             background-color: #FFD700;
             color: #fff;
         }
-    h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+      h1 {
+      font-family: "Times New Roman";
+    font-size: 2.25em;
+    margin-bottom: 10px;
 }
 
 h2 {
+    font-family: "Times New Roman", Times, serif;
     font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font :Arial;
+    font-size: 18px;
+    line-height: 1.4;
+    color: grey;
     margin-bottom: 15px;
 }
-
 </style>
 <div class="container-fluid">
     <div class="row">
@@ -100,6 +108,7 @@ p {
                                 The romantic enticement of the Taj Mahal makes Agra one of the most loved wedding destinations. Depending on the type of hotel and the budget you are going for, it can cost you roughly from INR 25,00,000 to INR 75,00,000.
                          </div>
                     </div>
+                        </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -112,6 +121,7 @@ p {
                                 Agra enjoys a semi-arid climate. Mid-October to April is favorable to get married to November- February having the best weather for couples looking to get hitched.
                         </div>
                     </div>
+                        </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -174,8 +184,6 @@ p {
                                 We organize a range of events from weddings that includes pre-wedding celebrations, honeymoon along with cruise packages to make every moment memorable.
                             </div>
                             </div>
-                        </div>
-                    </div>
                 </div>
                </div>
            </div>
@@ -183,4 +191,90 @@ p {
  </div>
 </div>
 </div>
+
+<div class="container" style="padding-bottom:50px;">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="row row-col-4">
+        <div class="col">
+            <div class="card" style="width: 12rem;">
+            <a href="{% url 'wedding_kerala' %}">
+                <img src="\media\wedding\kerala_card.png" alt="Europe Winter Group Departure Ex Bangalor">
+            </a>
+        </div>
+            </div>
+
+         <div class="col">
+            <div class="card" style="width: 12rem;">
+                <a href="{% url 'wedding_goa' %}"><img src="/media/wedding/goa_card.png" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card" style="width: 12rem;">
+                <a href="{% url 'wedding_jaipur' %}"><img src="\media\wedding\jaipur_card.png" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+
+             <div class="col">
+            <div class="card" style="width: 12rem;">
+                <a href="{% url 'wedding_jaisalmer' %}"><img src="\media\wedding\jaisalmer_card.png" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="carousel-item">
+
+        <div class="row row-col-4">
+        <div class="col">
+            <div class="card" style="width: 12rem;">
+            <a href="{% url 'wedding_agra' %}">
+                <img class="card-animation" src="\media\wedding\agra1_card.png" alt="Europe Winter Group Departure Ex Bangalore">
+
+            </a>
+        </div>
+            </div>
+
+         <div class="col">
+            <div class="card" style="width: 12rem;">
+                <a href="{% url 'wedding_india' %}"><img src="/media/wedding/india_card.png" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card" style="width: 12rem;">
+                <a href="#"><img src="\media\wedding\andaman.png" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+
+             <div class="col">
+            <div class="card" style="width: 12rem;">
+                <a href="{% url 'wedding_international' %}"><img src="\media\wedding\international_card.png" class="card-img-top" alt="..."></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+
+
+
+
 {% endblock content %}
