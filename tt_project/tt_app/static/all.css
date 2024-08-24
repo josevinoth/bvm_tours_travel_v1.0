@@ -8,6 +8,61 @@ body {
     padding: 0;
 }
 
+.sidebar {
+            font-size: 1.25em;
+            width: 20%;
+            float: left;
+            background-color: #f7f7f7;
+            padding: 5px;
+            box-sizing: border-box;
+            border-right: 1px solid #ddd;
+            height: 60vh;
+        }
+.sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+.sidebar a.active {
+            background-color: #FFD700;
+            color: #fff;
+        }
+h1 {
+      font-family: "Times New Roman";
+      font-size: 2.25em;
+      margin-bottom: 10px;
+   }
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font :Arial;
+    font-size: 18px;
+    line-height: 1.4;
+    color: grey;
+    margin-bottom: 15px;
+}
+ .accordion-body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font :Arial;
+    font-size: 18px;
+    line-height: 1.4;
+    color: grey;
+    margin-bottom: 15px;
+    }
+
 .card_animation {
     width: 100%;
     height: 320px;
