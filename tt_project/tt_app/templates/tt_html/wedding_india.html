@@ -1,82 +1,17 @@
 {% extends "tt_html/base.html" %}
 {% load widget_tweaks %}
 {% block content %}
-<style>
-    .sidebar {
-            font-size: 1.25em;
-            width: 20%;
-            float: left;
-            background-color: #f7f7f7;
-            padding: 5px;
-            box-sizing: border-box;
-            border-right: 1px solid #ddd;
-            height: 60vh;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #000;
-            margin-bottom: 5px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .sidebar a.active {
-            background-color: #FFD700;
-            color: #fff;
-        }
-      h1 {
-      font-family: "Times New Roman";
-    font-size: 2.25em;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.5em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font :Arial;
-    font-size: 18px;
-    line-height: 1.4;
-    color: grey;
-    margin-bottom: 15px;
-}
-    .accordion-item{
-    font-family: Arial, Helvetica, sans-serif;
-    font :Arial;
-    font-size: 16px;
-    color: grey;
-    margin-bottom: 15px;
-    }
-    .accordion-header{
-    font-family: Arial, Helvetica, sans-serif;
-    font :Arial;
-    font-size: 20px;
-    color: grey;
-    margin-bottom: 1px;
-    }
-    .accordion-button collapsed{
-    font-family: Arial, Helvetica, sans-serif;
-    font :Arial;
-    font-size: 20px;
-    line-height: 1.6;
-    color: grey;
-    margin-bottom: 15px;
-    }
-</style>
-<div class="container-fluid">
+<div class="container-fluid" style="background-image:url('/media/wedding/red2_background.png');background-size:cover;height:300px;">
     <div class="row">
-        <img class="pb-2" src="/media/wedding/weddingindia_card.png" width="1800" height="300"/>
+        <div class="col-12">
+            <h1 style="text-align:center;padding-top:100px;color:white;font-family:Times New Roman,Time,serif;font-size:80px;">Best Destination Wedding in India </h1>
+        </div>
     </div>
+</div>
+<div class="container-fluid" style="padding-top:50px; padding-right:50px;">
     <div class="row">
         <div class="col">
-            <div class="row container-fluid" >
+            <div class="row container-fluid">
                 <div class="col-2 sidebar shadow">
                     <a href="{% url 'wedding_agra' %}">Agra</a>
                     <a href="#">Andaman</a>
@@ -85,9 +20,10 @@ p {
                     <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
                     <a href="#">Jodhpur</a>
                     <a href="{% url 'wedding_kerala' %}">Kerala</a>
+                   <button type="button" class="btn btn-primary fs-2" style="background:#ff0000;font-family:Times New Roman,Time,serif;border:none;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Enquiry Form</button>
                 </div>
 
-                <div class="col-10 p-5" style="text-align: justify;">
+                <div class="col-10" style="text-align: justify;padding-left:50px;">
                     <p>From the beautiful beaches of Goa to the royal palaces of Rajasthan and the scenic splendour of Coorg and Mussoorie, we have some of the best destination wedding spots in India. In fact, planning a destination wedding in India is inexpensive and far easier. At GT Holidays, we’ll help you plan the perfect dream wedding. From offering the best destination wedding packages in India to guest concierge services, we’ll run the whole gamut at the most affordable prices.<br>
 
                        We’ve used our extensive experience in the industry and relationships with trade partners to put together luxury destination wedding packages in India and abroad. Be it an intimate gathering or a big fat grand wedding, there’s nothing we cannot plan!<br><br>
@@ -120,34 +56,38 @@ p {
                     <h1>FAQs about India Wedding Destination</h1>
                      <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  <i class="fa-solid fa-clipboard-question" style="padding-right:10px;"></i>What is the best time to have a honeymoon in India?
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                 <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
+                                What is the best time to have a honeymoon in India?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 The timing depends on where you’re going for your honeymoon among our honeymoon tour packages in India. The best time to visit Manali for your honeymoon, for instance, is between October to February. For a place like Kerala, it’s between September to March.
                          </div>
                     </div>
+                        </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                               <i class="fa-thin fa-message-question" style="padding-right:10px;"></i>
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                                 Which is the best month to visit India?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 The best time to visit India is between October and March, depending on where you’re going for your honeymoon tour packages. The weather during this period is a mix of comfortably warm and sunny, and also wintery if you choose to go to the mountainous areas.
                         </div>
                     </div>
+                        </div>
                         <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                               How many days are enough for an India trip?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Depending on where you are visiting, somewhere between 10-14 days is sufficient for a trip to India for your honeymoon
@@ -155,11 +95,12 @@ p {
                         </div>
                     </div>
                         <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                               <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                                Is India safe for honeymoon couples?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Yes, our honeymoon holiday packages in India are all safe for every tourist.
@@ -167,11 +108,12 @@ p {
                             </div>
                         </div>
                           <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+                              <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                               How can I travel in India?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 There are various modes of transportation available in India, including buses, autos, subways, and cabs.
@@ -179,11 +121,12 @@ p {
                             </div>
                         </div>
                          <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                              <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                               What are the visa requirements for international travelers visiting India?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Our best honeymoon tour operators in India will arrange everything for you right from your visa to your tickets, hotel arrangement, and itinerary. All the visa requirements will be handled by us to get you your visa on time.
@@ -191,66 +134,265 @@ p {
                         </div>
                         </div>
                     </div>
-                    </div>
                   </div>
                 </div>
-            </div>
+
         </div>
     </div>
 </div>
-    <div class="container-fluid">
-                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-5">
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\goa_card.png" class="card-img-top" alt="GOA PICTURE">
-                            <a href="{% url 'wedding_goa' %}" class="btn btn-primary">Go TO Goa</a></div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #ff0000;color:white;">
+        <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+             <div class="mb-3">
+            <label for="recipient-city" class="col-form-label">City:</label>
+            <input type="text" class="form-control" id="recipient-city">
+          </div>
+             <div class="mb-3">
+            <label for="recipient-phone" class="col-form-label">Mobile number:</label>
+            <input type="text" class="form-control" id="recipient-phone">
+          </div>
+             <div class="mb-3">
+            <label for="recipient-mail" class="col-form-label">Email ID:</label>
+            <input type="text" class="form-control" id="recipient-mail">
+          </div>
+             <div class="mb-3">
+            <label for="recipient-destination" class="col-form-label">Travel Destination:</label>
+            <input type="text" class="form-control" id="recipient-destination">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" style="background:#ff0000;" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--image slider--->
+
+
+<div class="container-fluid" style="padding-bottom:50px;">
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="card" style="background-image:url('/media/wedding/goa2_card.png');background-size:cover;">
+                <a href="{% url 'wedding_goa' %}">
+                    <div class="card-content">
+                        <span><b>Goa</b></span>
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\jaipur_card.png" class="card-img-top" alt="jaipur picture">
-                            <a href="{% url 'wedding_jaipur' %}" class="btn btn-primary">Jaipur</a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\jaisalmer_card.png" class="card-img-top" alt="cruise">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-primary">Jaisalmer</a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\jodpur_card.png" class="card-img-top" alt="jodpur">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-primary">jodpur</a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\kerala_card.png" class="carrd-img-top" alt="kerala">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-pimary">Kerala</a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\udaipur_card.png" class="card-img-top" alt="udaipur">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-primary"> udaipur</a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\andaman.png" class="card-img-top" alt="andaman">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-primary"> Andaman</a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\agra1_card.png" class="card-img-top" alt="agra">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-primary"> AGRA </a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\india_card.png" class="card-img-top" alt="india">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-primary">INDIA</a></div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 15rem;">
-                            <img src="\media\wedding\international_card.png" class="card-img-top" alt="international">
-                            <a href="{% url 'wedding_india' %}" class="btn btn-primary">International</a></div>
-                    </div>
-                </div>
+                </a>
             </div>
+            <div class="card"  style="background-image:url('/media/wedding/jaipur1_card.png');background-size:cover;">
+                <a href="{% url 'wedding_jaipur' %}">
+                    <div class="card-content">
+                        <span><b>Jaipur</b></span>
+                </div>
+                </a>
+            </div>
+            <div class="card"  style="background-image:url('/media/wedding/jaisalmer2_card.png');background-size:cover;">
+                <a href="#">
+                     <div class="card-content">
+                        <span><b>Jaisalmer</b></span>
+                </div>
+                </a>
+            </div>
+            <div class="card"  style="background-image:url('/media/wedding/jodpur2_card.png');background-size:cover;">
+                <a href="#">
+                     <div class="card-content">
+                        <span><b>Jodhpur</b></span>
+                </div>
+
+                </a>
+            </div>
+            <div class="card" style="background-image:url('/media/wedding/kerala3_card.png');background-size:cover;">
+                <a href="#">
+                     <div class="card-content">
+                        <span><b>kerala</b></span>
+                </div>
+                </a>
+            </div>
+            <div class="card" style="background-image:url('/media/wedding/udaipur2_card.png');background-size:cover;">
+                <a href="#">
+                    <div class="card-content">
+                        <span><b>Udaipur</b></span>
+                </div>
+
+                </a>
+            </div>
+            <div class="card" style="background-image:url('/media/wedding/adaman2_card.png');background-size:cover;">
+                <a href="#">
+                    <div class="card-content">
+                        <span><b>Andaman</b></span>
+                </div>
+                </a>
+            </div>
+            <div class="card" style="background-image:url('/media/wedding/agra2_card.png');background-size:cover;">
+                <a href="#">
+                    <div class="card-content">
+
+                        <span><b>Agra</b></span>
+                </div>
+                </a>
+            </div>
+            <div class="card" style="background-image:url('/media/wedding/india2_card.png');background-size:cover;">
+                <a href="#">
+                     <div class="card-content">
+                        <span><b>India</b></span>
+                </div>
+
+                </a>
+            </div>
+            <div class="card" style="background-image:url('/media/wedding/international2_card.png');background-size:cover;">
+                <a href="#">
+                     <div class="card-content">
+                        <span><b>International</b></span>
+                </div>
+
+                </a>
+            </div>
+        </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
+<style>
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    min-width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    border-radius:0%;
+    font-size: 1.5em;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:focus, .next:focus {
+    outline: none;
+}
+.card {
+    min-width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+}
+
+.card-content {
+    text-align: center;
+     padding-top:300px;
+}
+
+.card-content span {
+    background: linear-gradient(to right, #ff0000,#ffc34d) ;
+    padding: 5px 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+     margin: 10px;
+
+}
+
+</style>
+<script type="text/javascript">
+    let currentIndex = 0;
+const slides = document.querySelector('.carousel');
+const cards = document.querySelectorAll('.carousel .card');
+const totalCards = cards.length;
+const visibleCards = 4;
+
+function updateSlidePosition() {
+    const offset = -(currentIndex * (100 / visibleCards));
+    slides.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    if (currentIndex < totalCards - visibleCards) {
+        currentIndex++;
+        updateSlidePosition();
+    } else {
+        currentIndex = 0;
+        updateSlidePosition();
+    }
+}
+
+function prevSlide() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlidePosition();
+    } else {
+        currentIndex = totalCards - visibleCards;
+        updateSlidePosition();
+    }
+}
+
+// Initialize the carousel position
+updateSlidePosition();
+
+
+</script>
+
+
+
 
 {% endblock content %}
