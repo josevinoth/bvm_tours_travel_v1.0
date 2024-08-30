@@ -3,6 +3,9 @@ from . import views
 urlpatterns = [
     path('wedding_india', views.wedding_india_view, name='wedding_india'),
     path('wedding_international', views.wedding_international_view, name='wedding_international'),
+    path('wedding_bali', views.wedding_bali_view, name='wedding_bali'),
+    path('wedding_malaysia', views.wedding_malaysia_view, name='wedding_malaysia'),
+    path('wedding_dubai', views.wedding_dubai_view, name='wedding_dubai'),
     path('wedding_goa', views.wedding_goa_view, name='wedding_goa'),
     path('wedding_jodpur', views.wedding_jodpur_view, name='wedding_jodpur'),
     path('wedding_andaman', views.wedding_andaman_view, name='wedding_andaman'),
@@ -19,8 +22,9 @@ urlpatterns = [
     path('blog', views.blog, name='blog'),
     path('awards_achievements', views.awards_achievements, name='awards_achievements'),
     path('group_tours', views.group_tours, name='group_tours'),
-    path('packages_india', views.packages_india_view , name='packages_india'),
+    path('packages_india', views.packages_india_view, name='packages_india'),
     path('packages_international', views.packages_international_view, name='packages_international'),
+    path('enquiry_form', views.registration_add, name='enquiry_form'),
 ]
 
 

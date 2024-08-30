@@ -13,6 +13,9 @@ from.sub_views.packages_india_view import packages_india_view
 from.sub_views.packages_international_view import packages_international_view
 from.sub_views.home_page_view import home_page_view
 from.sub_views.wedding_goa_view import wedding_goa_view
+from.sub_views.wedding_bali_view import wedding_bali_view
+from.sub_views.wedding_malaysia_view import wedding_malaysia_view
+from.sub_views.wedding_dubai_view import wedding_dubai_view
 from.sub_views.wedding_andaman_view import wedding_andaman_view
 from.sub_views.wedding_india_view import wedding_india_view
 from.sub_views.wedding_jaipur_view import wedding_jaipur_view
@@ -22,3 +25,4 @@ from.sub_views.wedding_jodpur_view import wedding_jodpur_view
 from.sub_views.wedding_kerala_view import wedding_kerala_view
 from.sub_views.wedding_jaisalmer_view import wedding_jaisalmer_view
 from.sub_views.wedding_international_view import wedding_international_view
+from .sub_views.registration_add_view import registration_add
