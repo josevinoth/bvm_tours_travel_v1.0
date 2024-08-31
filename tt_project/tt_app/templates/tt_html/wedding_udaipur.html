@@ -1,25 +1,29 @@
 {% extends "tt_html/base.html" %}
 {% load widget_tweaks %}
 {% block content %}
-
-<div class="container-fluid">
+<div class="container-fluid" style="background-image:url('/media/wedding/red2_background.png');background-size:cover;height:300px;">
     <div class="row">
-        <img class="pb-2" src="/media/wedding/udaipur2_card.png" width="1800" height="300"/>
+        <div class="col-12">
+            <h1 style="text-align:center;padding-top:100px;color:white;font-family:Times New Roman,Time,serif;font-size:80px;">Udaipur Destination Wedding </h1>
+        </div>
     </div>
+</div>
+<div class="container-fluid" style="padding-top:50px; padding-right:50px;">
     <div class="row">
         <div class="col">
             <div class="row container-fluid" >
-                <div class="col-2 sidebar shadow">
-                    <a href="{% url 'wedding_agra' %}">Agra</a>
-                    <a href="#">Andaman</a>
+                <div class="col-3 sidebar shadow">
+                     <a  href="{% url 'wedding_agra' %}">Agra</a>
+                    <a href="{% url 'wedding_andaman' %}">Andaman</a>
                     <a href="{% url 'wedding_goa' %}">Goa</a>
                     <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
                     <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
-                    <a href="#">Jodhpur</a>
+                    <a href="{% url 'wedding_jodpur' %}">Jodhpur</a>
                     <a href="{% url 'wedding_kerala' %}">Kerala</a>
+                    <a href="{% url 'wedding_udaipur' %}" class="active">Udaipur</a>
                 </div>
 
-                <div class="col-10 p-5" style="text-align: justify;">
+                <div class="col-9" style="text-align: justify;">
                     <h1>Udaipur Destination Wedding Packages</h1>
                     <p>Imagine marrying among beautiful forts and royal palaces, with pearl-like lakes surrounding you. In Udaipur, you get everything! It is one of India’s most popular wedding destinations. When it comes to destination weddings, Udaipur Destination Wedding packages are always at the top of the list.</p>
 
@@ -98,7 +102,7 @@
                         </h1>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                October to May is the ideal period to get married in Andaman because the weather is fantastic during these months. GT Holidays gives you access to the best destination wedding venues in Andaman depending on the kind of ambience you want for your destination wedding.                        </div>
+                                October to May is the ideal period to get married in Andaman because the weather is fantastic during these months. MC Tours & Travels gives you access to the best destination wedding venues in Andaman depending on the kind of ambience you want for your destination wedding.                        </div>
                         </div>
                     </div>
                         <div class="accordion-item">
@@ -168,7 +172,7 @@
                         </h1>
                         <div id="flush-collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                GT Holidays specializes in organizing group trips and vacations to various places. They do, however, offer you their assistance in a variety of areas, including educational, international, Indian, and honeymoon packages.
+                                MC Tours & Travels specializes in organizing group trips and vacations to various places. They do, however, offer you their assistance in a variety of areas, including educational, international, Indian, and honeymoon packages.
                               </div>
                             </div>
                 </div>

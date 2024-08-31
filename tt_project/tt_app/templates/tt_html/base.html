@@ -103,8 +103,26 @@
                             Wedding
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{% url 'wedding_india' %}">India</a>
-                            <a class="dropdown-item" href="{% url 'wedding_international' %}">International</a>
+                            <div class="col">
+                            <a class="dropdown-item" href="{% url 'wedding_india' %}"><b>India</b></a>
+                                 <a class="dropdown-item" href="{% url 'wedding_agra' %}">Agra</a>
+                                 <a class="dropdown-item" href="{% url 'wedding_andaman' %}">Andaman</a>
+                                <a class="dropdown-item" href="{% url 'wedding_goa' %}">Goa</a>
+                                <a class="dropdown-item" href="{% url 'wedding_jaipur' %}">Jaipur</a>
+                                <a class="dropdown-item" href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
+                                <a class="dropdown-item" href="{% url 'wedding_jodpur' %}">Jodhpur</a>
+                                <a class="dropdown-item" href="{% url 'wedding_kerala' %}">Kerala</a>
+                                <a class="dropdown-item" href="{% url 'wedding_udaipur' %}">Udaipur</a>
+                                </div>
+                            <div class="col">
+                                <a class="dropdown-item" href="{% url 'wedding_international' %}"><b>International</b></a>
+                                <a class="dropdown-item" href="#">Bali</a>
+                                <a class="dropdown-item" href="#">Dubai</a>
+                                <a class="dropdown-item" href="#">Malaysia</a>
+                                <a class="dropdown-item" href="#">Sri Lanka</a>
+                                <a class="dropdown-item" href="#">Thailand</a>
+                            </div>
+
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -117,6 +135,24 @@
                             <a class="dropdown-item" href="#">Hyderabad</a>
                         </div>
                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_MCtours&travels" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MC Tours & Travels
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Enquiry Form</a>
+                            <a class="dropdown-item" href="#"> Trip Creation</a>
+                            <a class="dropdown-item" href="#">Vehicle Allotment</a>
+                            <a class="dropdown-item" href="#">Trip Rate Calculation</a>
+                            <a class="dropdown-item" href="#">Customer Master</a>
+                            <a class="dropdown-item" href="#"> Vehicle Master</a>
+                            <a class="dropdown-item" href="#">Vendor Master</a>
+                            <a class="dropdown-item" href="#"> Billing</a>
+                            <a class="dropdown-item" href="#">AR</a>
+                            <a class="dropdown-item" href="#">Fleet Management </a>
+                            <a class="dropdown-item" href="#">Repairs & Maintenance</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -127,7 +163,6 @@
 {% block content %}
 
 {% endblock content %}
-</div>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -150,13 +185,11 @@
 <!--Date format-->
 <script src="https://cdn.datatables.net/plug-ins/1.13.6/dataRender/datetime.js"></script>
 
-
-
+</body>
+</html>
 <style>
     .dropdown-item:hover {
         background-color: #BF0005;
         color: white; /* Optional: to ensure text remains readable */
     }
 </style>
-</body>
-</html>

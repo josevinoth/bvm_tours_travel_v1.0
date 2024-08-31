@@ -1,24 +1,28 @@
 {% extends "tt_html/base.html" %}
 {% load widget_tweaks %}
 {% block content %}
-
-<div class="container-fluid">
+<div class="container-fluid" style="background-image:url('/media/wedding/red2_background.png');background-size:cover;height:300px;">
     <div class="row">
-        <img src="/media/wedding/jaisalmer1_card.png" width="1400" height="200"/>
+        <div class="col-12">
+            <h1 style="text-align:center;padding-top:100px;color:white;font-family:Times New Roman,Time,serif;font-size:80px;">Jaisalmer Destination Wedding </h1>
+        </div>
     </div>
+</div>
+<div class="container-fluid" style="padding-top:50px; padding-right:50px;">
 	<div class="row">
         <div class="col">
             <div class="row container-fluid" >
-                <div class="col-2 sidebar shadow">
-                    <a href="{% url 'wedding_agra' %}">Agra</a>
-                    <a href="#">Andaman</a>
+                <div class="col-3 sidebar shadow">
+                     <a  href="{% url 'wedding_agra' %}">Agra</a>
+                    <a href="{% url 'wedding_andaman' %}">Andaman</a>
                     <a href="{% url 'wedding_goa' %}">Goa</a>
                     <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
-                    <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
-                    <a href="#">Jodhpur</a>
+                    <a href="{% url 'wedding_jaisalmer' %}" class="active">Jaisalmer</a>
+                    <a href="{% url 'wedding_jodpur' %}">Jodhpur</a>
                     <a href="{% url 'wedding_kerala' %}">Kerala</a>
+                    <a href="{% url 'wedding_udaipur' %}">Udaipur</a>
                 </div>
-                 <div class="col-10 p-5" style="text-align: justify;">
+                 <div class="col-9" style="text-align: justify;padding-left:50px;">
               <h1>The Perfect Beginning to Forever- Jaisalmer Destination Wedding Packages</h1>
                 <p>An ‘Oasis’ in the desert and also known as the ‘Golden City of India’, Jaisalmer is famous for its stunning sand dunes, sheer beauty, magnificent Havelis, historic temples and colourful market places. It’s also quite prominent for hosting couples worldwide and turning their dreams into reality! How you may ask? Jaisalmer has some of the best wedding venues in the country built with a traditional palatial look to make you feel nothing less than a royal. It welcomes couples from all around the world looking to get hitched, and if you’re one of those couples then our Jaisalmer Destination Wedding Package is all you need to bring your dream wedding to life.</p>
                <h1> What are some of the tips for Destination Wedding in Jaisalmer?</h1>

@@ -12,19 +12,18 @@
     <div class="row">
         <div class="col">
             <div class="row container-fluid">
-                <div class="col-2 sidebar shadow">
-                    <a href="{% url 'wedding_agra' %}">Agra</a>
-                    <a href="#">Andaman</a>
+                <div class="col-3 sidebar shadow">
+                    <a  href="{% url 'wedding_agra' %}">Agra</a>
+                    <a href="{% url 'wedding_andaman' %}">Andaman</a>
                     <a href="{% url 'wedding_goa' %}">Goa</a>
                     <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
                     <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
-                    <a href="#">Jodhpur</a>
+                    <a href="{% url 'wedding_jodpur' %}">Jodhpur</a>
                     <a href="{% url 'wedding_kerala' %}">Kerala</a>
-                   <button type="button" class="btn btn-primary fs-2" style="background:#ff0000;font-family:Times New Roman,Time,serif;border:none;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Enquiry Form</button>
+                    <a href="{% url 'wedding_udaipur' %}">Udaipur</a>
                 </div>
-
-                <div class="col-10" style="text-align: justify;padding-left:50px;">
-                    <p>From the beautiful beaches of Goa to the royal palaces of Rajasthan and the scenic splendour of Coorg and Mussoorie, we have some of the best destination wedding spots in India. In fact, planning a destination wedding in India is inexpensive and far easier. At GT Holidays, we’ll help you plan the perfect dream wedding. From offering the best destination wedding packages in India to guest concierge services, we’ll run the whole gamut at the most affordable prices.<br>
+                <div class="col-9" style="text-align: justify;padding-left:50px;">
+                    <p>From the beautiful beaches of Goa to the royal palaces of Rajasthan and the scenic splendour of Coorg and Mussoorie, we have some of the best destination wedding spots in India. In fact, planning a destination wedding in India is inexpensive and far easier. At MC Tours & Travels, we’ll help you plan the perfect dream wedding. From offering the best destination wedding packages in India to guest concierge services, we’ll run the whole gamut at the most affordable prices.<br>
 
                        We’ve used our extensive experience in the industry and relationships with trade partners to put together luxury destination wedding packages in India and abroad. Be it an intimate gathering or a big fat grand wedding, there’s nothing we cannot plan!<br><br>
 
@@ -33,10 +32,10 @@
                     <p>When choosing a wedding destination, keep accessibility and the guest list in mind. An offbeat location is exciting, but is it accessible for seniors or relatives with a disability? Can your guests afford to pay for their travel and accommodation? Is the weather conducive for a wedding? What kind of backdrop would you love for the ceremony? If you’ve always dreamed about saying your I dos by the beach, consider a beach location in Goa or Kerala. Choose Rajasthan for its traditional and palatial ambiance if you love pomp and grandeur.</p>
                     <h1>Choosing The Right Date:</h1>
                     <p >October to March is the best season for weddings because the weather is pleasant and there are plenty of auspicious dates during these months. Your choice of date also depends on the location. For instance, hill stations like Mussoorie and Ooty are very cold during winter. If you’re looking for affordable destination wedding packages, choose a date in the off-season. Since there’s less crowd and fewer hotel bookings, wedding costs will be lower. Professionals like makeup artists and photographers are readily available.</p>
-                    <p >With GT Holidays, budgets aren’t a problem. You can avail the best destination wedding packages, even during the peak season. Just let us know your chosen date, and we’ll reserve the venue, book your rooms, and engage professional artists like decorators and photographers immediately.</p>
+                    <p >With MC Tours & travels, budgets aren’t a problem. You can avail the best destination wedding packages, even during the peak season. Just let us know your chosen date, and we’ll reserve the venue, book your rooms, and engage professional artists like decorators and photographers immediately.</p>
                     <p>The shoulder season is a great time as well – you can save your guests and yourselves money and still experience the great weather.</p>
                     <h1>Decide On The Budget</h1>
-                    <p>Destination weddings in India usually start from around INR 10 Lakh and could go up to INR 60 Lakhs or more, depending on the location, season, and number of guests. GT Holidays offers the best destination wedding packages irrespective of your budget.</p>
+                    <p>Destination weddings in India usually start from around INR 10 Lakh and could go up to INR 60 Lakhs or more, depending on the location, season, and number of guests. MC Tours & Travels offers the best destination wedding packages irrespective of your budget.</p>
                     <h1>Best Destination Wedding Venues In India</h1>
                     <p>We offer destination wedding packages in some of the most exotic locations in India. Some of them are listed below:</p>
                     <h1>Namah, Jim Corbett</h1>
@@ -141,51 +140,7 @@
     </div>
 </div>
 
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header" style="background: #ff0000;color:white;">
-        <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-             <div class="mb-3">
-            <label for="recipient-city" class="col-form-label">City:</label>
-            <input type="text" class="form-control" id="recipient-city">
-          </div>
-             <div class="mb-3">
-            <label for="recipient-phone" class="col-form-label">Mobile number:</label>
-            <input type="text" class="form-control" id="recipient-phone">
-          </div>
-             <div class="mb-3">
-            <label for="recipient-mail" class="col-form-label">Email ID:</label>
-            <input type="text" class="form-control" id="recipient-mail">
-          </div>
-             <div class="mb-3">
-            <label for="recipient-destination" class="col-form-label">Travel Destination:</label>
-            <input type="text" class="form-control" id="recipient-destination">
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" style="background:#ff0000;" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
 <!--image slider--->
-
 
 <div class="container-fluid" style="padding-bottom:50px;">
     <div class="carousel-container">

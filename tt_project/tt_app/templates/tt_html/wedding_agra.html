@@ -1,71 +1,29 @@
 {% extends "tt_html/base.html" %}
 {% load widget_tweaks %}
 {% block content %}
-<style>
-
-    .sidebar {
-            font-size: 1.25em;
-            width: 20%;
-            float: left;
-            background-color: #f7f7f7;
-            padding: 5px;
-            box-sizing: border-box;
-            border-right: 1px solid #ddd;
-            height: 60vh;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #000;
-            margin-bottom: 5px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .sidebar a.active {
-            background-color: #FFD700;
-            color: #fff;
-        }
-      h1 {
-      font-family: "Times New Roman";
-    font-size: 2.25em;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.5em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font :Arial;
-    font-size: 18px;
-    line-height: 1.4;
-    color: grey;
-    margin-bottom: 15px;
-}
-</style>
-<div class="container-fluid">
+<div class="container-fluid" style="background-image:url('/media/wedding/red2_background.png');background-size:cover;height:300px;">
     <div class="row">
-        <img src="/media/wedding/agra_card.png" width="1400" height="200"/>
+        <div class="col-12">
+            <h1 style="text-align:center;padding-top:100px;color:white;font-family:Times New Roman,Time,serif;font-size:80px;">Agra Destination Wedding </h1>
+        </div>
     </div>
+</div>
+
+<div class="container-fluid" style="padding-top:50px; padding-right:50px;">
 	<div class="row">
         <div class="col">
             <div class="row container-fluid" >
-                <div class="col-2 sidebar shadow">
-                    <a href="{% url 'wedding_agra' %}">Agra</a>
-                    <a href="#">Andaman</a>
+                <div class="col-3 sidebar shadow">
+                    <a  href="{% url 'wedding_agra' %}" class="active">Agra</a>
+                    <a href="{% url 'wedding_andaman' %}">Andaman</a>
                     <a href="{% url 'wedding_goa' %}">Goa</a>
                     <a href="{% url 'wedding_jaipur' %}">Jaipur</a>
                     <a href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
-                    <a href="#">Jodhpur</a>
+                    <a href="{% url 'wedding_jodpur' %}">Jodhpur</a>
                     <a href="{% url 'wedding_kerala' %}">Kerala</a>
+                    <a href="{% url 'wedding_udaipur' %}">Udaipur</a>
                 </div>
-                 <div class="col-10 p-5" style="text-align: justify;">
+                 <div class="col-9" style="text-align: justify;padding-left:50px;">
                 <h1> Begin Your Lifelong Journey with Our Agra Destination Wedding Packages</h1>
                   <p>Home to ‘A Symbol of Love- Taj Mahal, Agra is considered to be one of the most romantic cities in the country, and rightly so. A place which in all its essence is what it is because of the passionate love of a King towards his deceased wife has now been a source of inspiration for lovers all around the globe. It only makes sense that the city enjoys couples wanting to get married in the place where true love was once witnessed. With we thoughtfully designed Agra Destination Wedding Packages, you can leave it all on us to make your wedding the most special.</p>
 
@@ -80,29 +38,29 @@ p {
                       <p>One of the most sought-after romantic wedding destinations set on the scenic banks of river Yamuna, Agra is known for being home to some of the most prominent attractions in the country like Taj Mahal, Agra Fort, Fatehpur Sikri, Akbar Tomb, Ram Bagh, and many more.</p>
 
                         <p>The whole of Agra is exceptionally beautiful, and you can choose to get married in any of the hotels or resorts overlooking one of the impressive attractions that the city has to offer.</p>
-                         <h1>What are some of the best places for a destination wedding in Agra?</h1>
+                         <h2>What are some of the best places for a destination wedding in Agra?</h2>
                           <p>If fancy and exotic is what you have in mind when you think of a destination wedding in Agra, then that’s exactly what you are going to get!</p>
-                           <ul>
-                               <li><b>Courtyard by Marriott Agra – </b>A 5-star hotel having a backdrop of the wonder of the world, the Taj Mahal; is equipped with state-of-the-art facilities, perfect for a romantic and opulent destination wedding.</li>
-                                <li><b>TAJ Hotel & Convention Centre – </b>In proximity to Agra Fort and Keoladeo National Park, this luxurious hotel is a blend of nature, modernity, rich history, and love making it the most popular place to get married in Agra.</li>
-                                 <li><b>Jaypee Palace Hotel –</b> As the name suggests, this upscale hotel has a regal look to it offering lavish services and infrastructure to make your dream of getting married like Royals come true.</li>
+                           <ul style="font-family: Arial, Helvetica, sans-serif; font :Arial;font-size: 18px;line-height: 1.4;color: grey; margin-bottom: 15px;">
+                               <li><b>Courtyard by Marriott Agra – </b>A 5-star hotel having a backdrop of the wonder of the world, the Taj Mahal; is equipped with state-of-the-art facilities, perfect for a romantic and opulent destination wedding.<br></li>
+                                <li><b>TAJ Hotel & Convention Centre – </b>In proximity to Agra Fort and Keoladeo National Park, this luxurious hotel is a blend of nature, modernity, rich history, and love making it the most popular place to get married in Agra.<br></li>
+                                 <li><b>Jaypee Palace Hotel –</b> As the name suggests, this upscale hotel has a regal look to it offering lavish services and infrastructure to make your dream of getting married like Royals come true.<br></li>
                            </ul>
-                              <h1>What are some of the best resorts to stay in Agra for a wedding ceremony?</h1>
+                              <h2>What are some of the best resorts to stay in Agra for a wedding ceremony?</h2>
                               <p>When it comes to extravagant wedding affairs and exquisite venues, Agra knows how to do it right. Here are some of the best resorts and hotels to stay in Agra for the wedding ceremony:</p>
-                              <ul>
-                                  <li><b>The Oberoi Amarvilas –</b>Inspired by the Mughal architecture, The Oberoi Amarvilas is one of the most lavish venues offering stunning and unrestricted views of the Taj Mahal from all its suites and rooms.</li>
-                                   <li><b>The Grand Imperial –</b> A century-old heritage hotel built for the British, today enjoys hosting couples from worldwide. Offering present-day facilities and services complemented by their warm hospitality makes it the perfect location to get married.</li>
-                                    <li><b>ITC Mughal Agra – </b>Sprawled over 35 acres of land, this stunning hotel inspired by the Mughal designs enjoys close proximity to the Taj Mahal and is known to be the only Indian hotel to have won the first Aga Khan Award for Excellence in Architecture in Asia.</li>
+                              <ul style="font-family: Arial, Helvetica, sans-serif; font :Arial;font-size: 18px;line-height: 1.4;color: grey; margin-bottom: 15px;">
+                                  <li><b>The Oberoi Amarvilas –</b>Inspired by the Mughal architecture, The Oberoi Amarvilas is one of the most lavish venues offering stunning and unrestricted views of the Taj Mahal from all its suites and rooms.<br></li>
+                                   <li><b>The Grand Imperial –</b> A century-old heritage hotel built for the British, today enjoys hosting couples from worldwide. Offering present-day facilities and services complemented by their warm hospitality makes it the perfect location to get married.<br></li>
+                                    <li><b>ITC Mughal Agra – </b>Sprawled over 35 acres of land, this stunning hotel inspired by the Mughal designs enjoys close proximity to the Taj Mahal and is known to be the only Indian hotel to have won the first Aga Khan Award for Excellence in Architecture in Asia.<br></li>
                               </ul>
                          <p>A beautiful city true to its history, Agra is really a wonder of India that welcomes tourists from all around the world throughout the year. Getting married in a place having such historical importance is something that many couples dream of. So, if you want to make it a part of your history, our Agra Destination Wedding Packages can promise to give you your dream wedding.</p>
                                <h1>FAQs</h1>
                                    <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  <i class="fa-solid fa-clipboard-question" style="padding-right:10px;"></i>How much does a destination wedding in Agra cost?
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                   <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>How much does a destination wedding in Agra cost?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 The romantic enticement of the Taj Mahal makes Agra one of the most loved wedding destinations. Depending on the type of hotel and the budget you are going for, it can cost you roughly from INR 25,00,000 to INR 75,00,000.
@@ -110,12 +68,12 @@ p {
                     </div>
                         </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                               <i class="fa-thin fa-message-question" style="padding-right:10px;"></i>
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                               <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                                 When is the Best Time to get married in agra?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Agra enjoys a semi-arid climate. Mid-October to April is favorable to get married to November- February having the best weather for couples looking to get hitched.
@@ -123,11 +81,12 @@ p {
                     </div>
                         </div>
                         <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                                How do I plan a Destination Wedding in Agra?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Destination weddings aren’t easy to plan. Planning a destination wedding includes a lot of logistics, communication, co-ordination in the chaos of the whole wedding itself. And so, we would say having us on your side will not only ease the whole process but will help you to focus and enjoy your functions.
@@ -135,11 +94,12 @@ p {
                         </div>
                     </div>
                         <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
-                               How much is an all-inclusive destination wedding?
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                               <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
+                                How much is an all-inclusive destination wedding?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Taj Mahal is a beautiful creation of History, and the romantic tangent that’s attached to it makes Agra a bit expensive for destination weddings. An all-inclusive destination wedding can range somewhere from INR 25,00,000 to INR 75,00,000; the amount can be lower than this depending on the number of guests, days, venue, and the wedding affair.
@@ -150,11 +110,12 @@ p {
 
 
                           <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree2">
+                              <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                                Do you pay for guests at destination wedding?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 Paying for guests at a destination wedding is at the host’s will and totally depends on the status and the budget they have. The footfall of guests in the wedding is dependent on the host’s decision to pay or not, and so this is something that should be considered while planning the guests' list.
@@ -162,11 +123,12 @@ p {
                             </div>
                         </div>
                          <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree3">
+                              <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                                How do I Book a Venue or Resort for Destination Wedding?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 The best way is to look at their website and look at the different options available. When you have a better understanding of what they have to offer, call the said venue or resort and enquire about the availability, packages and explain your requirements. Having a wedding planner can also be very helpful as they are experts in their industries and know how to get the best deals.
@@ -174,11 +136,12 @@ p {
                             </div>
                         </div>
                          <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree4" aria-expanded="false" aria-controls="flush-collapseThree4">
+                        <h1 class="accordion-header">
+                            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree4" aria-expanded="false" aria-controls="flush-collapseThree4">
+                             <i class="fa-solid fa-clipboard-question fa-1x" style="padding-right:20px;"></i>
                               Do you organize only Weddings or other Events as well?
                             </button>
-                        </h2>
+                        </h1>
                         <div id="flush-collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 We organize a range of events from weddings that includes pre-wedding celebrations, honeymoon along with cruise packages to make every moment memorable.
@@ -192,84 +155,8 @@ p {
 </div>
 </div>
 
-<div class="container" style="padding-bottom:50px;">
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <div class="row row-col-4">
-        <div class="col">
-            <div class="card" style="width: 12rem;">
-            <a href="{% url 'wedding_kerala' %}">
-                <img src="\media\wedding\kerala_card.png" alt="Europe Winter Group Departure Ex Bangalor">
-            </a>
-        </div>
-            </div>
-
-         <div class="col">
-            <div class="card" style="width: 12rem;">
-                <a href="{% url 'wedding_goa' %}"><img src="/media/wedding/goa_card.png" class="card-img-top" alt="..."></a>
-            </div>
-        </div>
-
-         <div class="col">
-            <div class="card" style="width: 12rem;">
-                <a href="{% url 'wedding_jaipur' %}"><img src="\media\wedding\jaipur_card.png" class="card-img-top" alt="..."></a>
-            </div>
-        </div>
-
-             <div class="col">
-            <div class="card" style="width: 12rem;">
-                <a href="{% url 'wedding_jaisalmer' %}"><img src="\media\wedding\jaisalmer_card.png" class="card-img-top" alt="..."></a>
-            </div>
-        </div>
-    </div>
-
-    </div>
-    <div class="carousel-item">
-
-        <div class="row row-col-4">
-        <div class="col">
-            <div class="card" style="width: 12rem;">
-            <a href="{% url 'wedding_agra' %}">
-                <img class="card-animation" src="\media\wedding\agra1_card.png" alt="Europe Winter Group Departure Ex Bangalore">
-
-            </a>
-        </div>
-            </div>
-
-         <div class="col">
-            <div class="card" style="width: 12rem;">
-                <a href="{% url 'wedding_india' %}"><img src="/media/wedding/india_card.png" class="card-img-top" alt="..."></a>
-            </div>
-        </div>
-
-         <div class="col">
-            <div class="card" style="width: 12rem;">
-                <a href="#"><img src="\media\wedding\andaman.png" class="card-img-top" alt="..."></a>
-            </div>
-        </div>
-
-             <div class="col">
-            <div class="card" style="width: 12rem;">
-                <a href="{% url 'wedding_international' %}"><img src="\media\wedding\international_card.png" class="card-img-top" alt="..."></a>
-            </div>
-        </div>
-    </div>
 
 
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
 
 
 
