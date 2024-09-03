@@ -7,6 +7,7 @@ urlpatterns = [
     path('wedding_malaysia', views.wedding_malaysia_view, name='wedding_malaysia'),
     path('wedding_dubai', views.wedding_dubai_view, name='wedding_dubai'),
     path('wedding_goa', views.wedding_goa_view, name='wedding_goa'),
+    path('wedding_srilanka', views.wedding_srilanka_view, name='wedding_srilanka'),
     path('wedding_jodpur', views.wedding_jodpur_view, name='wedding_jodpur'),
     path('wedding_andaman', views.wedding_andaman_view, name='wedding_andaman'),
     path('wedding_jaipur', views.wedding_jaipur_view, name='wedding_jaipur'),

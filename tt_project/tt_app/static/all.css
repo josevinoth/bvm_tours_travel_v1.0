@@ -59,6 +59,15 @@ p {
     color: grey;
     margin-bottom: 15px;
 }
+
+ ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font :Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    color: grey;
+    margin-bottom: 15px;
+}
  .accordion-body {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -84,8 +93,28 @@ p {
 
 .nav_bg{
 background-color:#BF0005;
-font-color:white;
+
 }
+.nav-link {
+    color: white !important;
+    font-size:20px;
+}
+
+
+.nav-link.dropdown-toggle {
+    color: white !important;
+}
+
+
+.dropdown-item {
+    color: black !important;
+}
+
+
+.dropdown-menu {
+    background-color:  #ffcccc; /* Example dark background color */
+}
+
 
 /* Common Styles */
 .banner-section {

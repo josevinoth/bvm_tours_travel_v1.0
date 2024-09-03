@@ -14,6 +14,7 @@ from.sub_views.packages_international_view import packages_international_view
 from.sub_views.home_page_view import home_page_view
 from.sub_views.wedding_goa_view import wedding_goa_view
 from.sub_views.wedding_bali_view import wedding_bali_view
+from.sub_views.wedding_srilanka_view import wedding_srilanka_view
 from.sub_views.wedding_malaysia_view import wedding_malaysia_view
 from.sub_views.wedding_dubai_view import wedding_dubai_view
 from.sub_views.wedding_andaman_view import wedding_andaman_view

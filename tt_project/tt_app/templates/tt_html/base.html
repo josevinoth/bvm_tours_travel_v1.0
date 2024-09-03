@@ -38,7 +38,7 @@
             </div>
             <div class="col-2" >
                 <h6>Hi, </h6>
-                <h6 style="color:red"></h6>
+                <h6 style="color:red;"></h6>
             </div>
             <div class="col-1" >
                 <h1><a  class="btn btn-dark "><i class="fas fa-sign-out-alt"></i></a></h1>
@@ -46,17 +46,17 @@
         </div>
     </div>
     <div class="">
-        <nav class="navbar navbar-expand-lg navbar-light nav_bg">
+        <nav class="navbar navbar-expand-lg navbar-light nav_bg" >
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="{% url 'home_page' %}"><i class="fas fa-home"></i> Home</a>
+                        <a class="nav-link"  href="{% url 'home_page' %}"><i class="fas fa-home" style="color:white;"></i> Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_company" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown_company" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Company
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -188,8 +188,14 @@
 </body>
 </html>
 <style>
-    .dropdown-item:hover {
+.dropdown-item:hover {
         background-color: #BF0005;
         color: white; /* Optional: to ensure text remains readable */
     }
+.nav-item dropdown a{
+    color: white;  /* Change this color to set the font color of the navbar brand/header */
+    font-size: 24px;
+    text-decoration: none;
+   }
+
 </style>
