@@ -104,16 +104,16 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="col">
-                            <a class="dropdown-item" href="{% url 'wedding_india' %}"><b>India</b></a>
-                                 <a class="dropdown-item" href="{% url 'wedding_agra' %}">Agra</a>
-                                 <a class="dropdown-item" href="{% url 'wedding_andaman' %}">Andaman</a>
+                                <a class="dropdown-item" href="{% url 'wedding_india' %}"><b>India</b></a>
+                                <a class="dropdown-item" href="{% url 'wedding_agra' %}">Agra</a>
+                                <a class="dropdown-item" href="{% url 'wedding_andaman' %}">Andaman</a>
                                 <a class="dropdown-item" href="{% url 'wedding_goa' %}">Goa</a>
                                 <a class="dropdown-item" href="{% url 'wedding_jaipur' %}">Jaipur</a>
                                 <a class="dropdown-item" href="{% url 'wedding_jaisalmer' %}">Jaisalmer</a>
                                 <a class="dropdown-item" href="{% url 'wedding_jodpur' %}">Jodhpur</a>
                                 <a class="dropdown-item" href="{% url 'wedding_kerala' %}">Kerala</a>
                                 <a class="dropdown-item" href="{% url 'wedding_udaipur' %}">Udaipur</a>
-                                </div>
+                            </div>
                             <div class="col">
                                 <a class="dropdown-item" href="{% url 'wedding_international' %}"><b>International</b></a>
                                 <a class="dropdown-item" href="{% url 'wedding_bali' %}">Bali</a>
@@ -135,7 +135,7 @@
                             <a class="dropdown-item" href="#">Hyderabad</a>
                         </div>
                     </li>
-                     <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_MCtours&travels" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             MC Tours & Travels
                         </a>
@@ -153,6 +153,47 @@
                             <a class="dropdown-item" href="#">Repairs & Maintenance</a>
                         </div>
                     </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button  class="btn btn-warning fs-3" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-whatever="@mdo" style="font-family:Times New Roman,Time,serif;border:none;" type="button">Enquiry Form</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background: #ff0000;color:white;">
+                                        <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="POST" action="" id="registration_add">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Phone Number</label>
+                                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message">Message</label>
+                                                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message or enquiry details" required></textarea>
+                                            </div>
+                                            <button type="submit" style="background:#ff0000;"  class="btn btn-primary fs-5">Submit</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -188,14 +229,14 @@
 </body>
 </html>
 <style>
-.dropdown-item:hover {
-        background-color: #BF0005;
-        color: white; /* Optional: to ensure text remains readable */
-    }
-.nav-item dropdown a{
-    color: white;  /* Change this color to set the font color of the navbar brand/header */
-    font-size: 24px;
-    text-decoration: none;
-   }
+    .dropdown-item:hover {
+            background-color: #BF0005;
+            color: white; /* Optional: to ensure text remains readable */
+        }
+    .nav-item dropdown a{
+        color: white;  /* Change this color to set the font color of the navbar brand/header */
+        font-size: 24px;
+        text-decoration: none;
+       }
 
 </style>
