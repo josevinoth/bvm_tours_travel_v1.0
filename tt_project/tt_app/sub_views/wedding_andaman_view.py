@@ -6,4 +6,4 @@ def wedding_andaman_view(request):
     context = {
         'reg_form': reg_form,
     }
-    return render(request, 'tt_html/wedding_andaman.html')
+    return render(request, 'tt_html/wedding_andaman.html', context)

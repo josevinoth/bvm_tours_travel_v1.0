@@ -26,7 +26,7 @@ urlpatterns = [
     path('packages_india', views.packages_india_view, name='packages_india'),
     path('packages_international', views.packages_international_view, name='packages_international'),
     path('enquiry_form', views.registration_add, name='enquiry_form'),
-    path('registration/add/', views.registration_add, name='registration_add'),
+    path('registration_add', views.registration_add, name='registration_add'),
 ]
 
 

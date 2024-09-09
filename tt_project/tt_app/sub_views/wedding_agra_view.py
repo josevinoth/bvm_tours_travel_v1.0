@@ -6,4 +6,4 @@ def wedding_agra_view(request):
     context = {
         'reg_form': reg_form,
     }
-    return render(request, 'tt_html/wedding_agra.html')
+    return render(request, 'tt_html/wedding_agra.html', context)
