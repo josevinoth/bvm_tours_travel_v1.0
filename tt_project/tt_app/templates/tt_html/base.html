@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load widget_tweaks %}
     <meta charset="UTF-8">
     <title>MC Tours & Traverls</title>
     <!-- Fontawesome cdn -->
@@ -155,9 +157,9 @@
                     </li>
                 </ul>
 
-                <ul class="navbar-nav ml-auto">
+<ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <button  class="btn btn-warning fs-3" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-whatever="@mdo" style="font-family:Times New Roman,Time,serif;border:none;" type="button">Enquiry Form</button>
+                        <button  class="btn btn-warning fs-3" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-whatever="@mdo" style="background:#ffcc00;font-family:Times New Roman,Time,serif;border:none;" type="button">Enquiry Form</button>
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -167,33 +169,45 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form method="POST" action="" id="registration_add">
+                                        <form method="POST" action="{% url 'registration_add' %}" id="registration_add">
                                             {% csrf_token %}
-                                            <div class="form-group">
-                                                <label for="reg_name">Name</label>
-                                                <input type="text" class="form-control" id="reg_name" placeholder="Enter your name" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="reg_city">city</label>
-                                                <input type="text" class="form-control" id="reg_city" placeholder="Enter your name" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="reg_phone">phone:</label>
-                                                <input type="tel" class="form-control" id="reg_phone" placeholder="Enter your name" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="reg_mail">Email</label>
-                                                <input type="email" class="form-control" id="reg_mail" placeholder="Enter your email" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="reg_destination">Destination</label>
-                                                <input type="text" class="form-control" id="reg_destination" placeholder="Enter your name" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="message">Message</label>
-                                                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message or enquiry details" required></textarea>
-                                            </div>
-                                            <button type="submit" style="background:#ff0000;"  class="btn btn-primary fs-5">Submit</button>
+                                             <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Name:</span>
+                        </div>
+                        {% render_field reg_form.reg_name id="reg_name" class="form-control" %}
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">City</span>
+                        </div>
+                    {% render_field reg_form.reg_city id="reg_city" class="form-control" %}
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Phone:</span>
+                        </div>
+                        {% render_field reg_form.reg_phone id="reg_phone" class="form-control" %}
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">E-Mail ID:</span>
+                        </div>
+                        {% render_field reg_form.reg_mail id="reg_mail" class="form-control" %}
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Destination:</span>
+                        </div>
+                        {% render_field reg_form.reg_destination id="reg_destination" class="form-control" %}
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Message:</span>
+                        </div>
+                        {% render_field reg_form.message id="message" class="form-control" %}
+                    </div>
+                   <button type="submit" style="background:#ff0000;"  class="btn btn-primary fs-5">Submit</button>
                                         </form>
 
                                     </div>

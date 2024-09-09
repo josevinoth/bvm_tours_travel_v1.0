@@ -16,9 +16,9 @@ def registration_add(request,registration_id=0):
             reg_form = registrationaddForm(instance=reg)
 
         context={
-                'reg_form':reg_form,
-                }
-        return render(request, "tt_html/enquiry_form.html",context)
+            'reg_form':reg_form,
+        }
+        return render(request, "tt_html/base.html",context)
     else:
         if registration_id == 0:
             print("I am inside post add")
@@ -32,3 +32,5 @@ def registration_add(request,registration_id=0):
             reg_form.save()
 
         return redirect(request.META['HTTP_REFERER'])
+
+
